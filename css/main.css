@@ -1,9 +1,30 @@
+/*
+
+*/
+
+
 Header {
   background-color: #B18904;
   color: white;
   font-family: 'Helvetica', bold;
   padding: 10px;
 }
+
+menu {
+  position: absolute;
+  width: 7%;
+  bottom: 0;
+  padding: 5px;
+}
+
+body {
+  background-color: #F2F5A9;
+}
+
+
+/*____________________________________- 
+Fonts
+---------------------------------------*/
 
 link {
   color: #000000;
@@ -14,31 +35,27 @@ form {
   padding: 50px;
 }
 
-menu {
-  position: absolute;
-  width: 7%;
-  bottom: 0;
-  padding: 5px;
-}
+
 .cmds {
-  float: 0;
   right: 0;
   border: 1px solid #000000;
   width: 25%;
-  margin: 20px;
+  margin: 25px;
   padding: 5px;
   float: right;
 }
 
-body {
-  background-color: #F2F5A9;
-}
+/*____________________________________
+Don panels
+-------------------------------------*/
+
 
 .panelsqr {
   width: 175px;
   height: 175px;
   background-color: #F2F5A9;
   float: right;
+  padding: 25px;
 }
 
 .comps {
@@ -51,11 +68,17 @@ body {
   left: 10%;
   position: absolute;
   padding: 20px;
+  margin: 20px;
 }
 
 .panel {
   float: left;
   width: 2%;
+}
+
+.logostyled {
+  width: 5%;
+  height: 5%;
 }
 
 
