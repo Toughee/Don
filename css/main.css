@@ -6,8 +6,11 @@
 Header {
   background-color: #B18904;
   color: white;
-  font-family: 'Helvetica', bold;
+  font-family: 'Oswald', sans-serif;
   padding: 10px;
+}
+h1 {
+  font-size: 4vw;
 }
 
 menu {
@@ -21,6 +24,30 @@ body {
   background-color: #F2F5A9;
 }
 
+button {
+  background-color:#44c767;
+  border-radius:14px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background-color:#5cbf2a;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+}
+
 
 /*____________________________________- 
 Fonts
@@ -32,17 +59,27 @@ link {
 }
 
 form {
-  padding: 50px;
+ /* padding: 50px;*/
 }
 
 
 .cmds {
   right: 0;
-  border: 1px solid #000000;
+  border: 0.2px solid #000000;
   width: 25%;
-  margin: 25px;
+  background-color: #B18904;
   padding: 5px;
   float: right;
+}
+label {
+  color: white; 
+}
+#result {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2vw;
+}
+.labl_ {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 /*____________________________________
@@ -51,16 +88,17 @@ Don panels
 
 
 .panelsqr {
-  width: 175px;
-  height: 175px;
+  width: 100%;
+  height: 100%;
   background-color: #F2F5A9;
-  float: right;
+ 
   padding: 25px;
 }
 
 .comps {
   padding-top: 5px;
   padding-bottom: 5px;
+  border: 1px solid #000000;
 }
 
 .displayd {
@@ -79,6 +117,17 @@ Don panels
 .logostyled {
   width: 5%;
   height: 5%;
+}
+
+.logo-banner {
+  padding: 20px;
+  left: 40%;
+  top: 80%;
+  margin-top: 10px;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  z-index: 2;
 }
 
 
