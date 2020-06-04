@@ -10,8 +10,16 @@
     <meta name="description" content="My Portfolio webpage">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="img/manifest/manifest.json">
+    <!--Favicon session-->
+    <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="img/favicons/manifest/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <!--CDN files-->
@@ -21,6 +29,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Patrick+Hand&family=Ubuntu+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
@@ -30,198 +39,81 @@
             <img class="logostyled" src="img/Don-logo.png"></i> Don</h1>
         <cite>Scheduling | Reminder | Checklist app</cite>
     </header>
+
     <section class="cmds">
-        <form>
-            <label for="Dons"></label>
-            <select id="Dons" name="choice">
-                <br>
-                <option value="null">Choose the type style:</option>
-                <option value="Scheduled task">Scheduled task</option>
-                <option value="Checklist">Checklist</option>
-                <option value="Reminder">Reminder</option>
-            </select>
+        <fieldset>
+            <input id="task_name" placeholder="Task:">
+            <br>
+
+            <input type="date" id="due_name" placeholder="Task:">
             <br>
             <br>
-            <label for="tasktd"></label>
-            <input type="text" id="tasktd" placeholder="Type your task/work">
-            <br>
-            <br>
-            <button onclick="newDon()">Get it Don!</button>
-        </form>
+
+            <button id="create_Don">Get it Don!</button>
+        </fieldset>
     </section>
-    <article class="displayd">
-        <h2>Current tasks</h2>
-        <div class="container">
-            <div class="row">
-                <div class="comps col">
-                    <div class="panel">
-                        <button onCLick="function1">
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button onCLick="function2">
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button onCLick="function3">
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr">
-                        <h6>Task/panel 2</h6>
-                        <cite>Style/panel 1</cite>
-                    </div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button onCLick="function1">
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button onCLick="function2">
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button onCLick="function3">
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr">
-                        <h6>Task/panel 2</h6>
-                        <cite>Style/panel 1</cite>
-                    </div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button onCLick="function1">
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button onCLick="function2">
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button onCLick="function3">
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr">
-                        <h6>Task/panel 2</h6>
-                        <cite>Style/panel 1</cite>
-                    </div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button onCLick="function1">
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button onCLick="function2">
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button onCLick="function3">
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr">
-                        <h6>Task/panel 2</h6>
-                        <cite>Style/panel 1</cite>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="comps col">
-                    <div class="panel">
-                        <button>
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr"></div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button>
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr"></div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button>
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr"></div>
-                </div>
-                <div class="comps col">
-                    <div class="panel">
-                        <button>
-                            <i class='fas fa-check-circle' style='font-size:25px;color:green'></i>
-                            <cite>Done</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-calendar-times' style='font-size:25px;color:red'></i>
-                            <cite>Delete</cite>
-                        </button>
-                        <button>
-                            <i class='fas fa-cog' style='font-size:25px;color:black'></i>
-                            <cite>Edit</cite>
-                        </button>
-                    </div>
-                    <div class="panelsqr"></div>
-                </div>
-            </div>
-        </div>
-    </article>
-    <menu>
-        <a href="">
-            <i class='fas fa-calendar-check' style='font-size:25px;color:lightblue'></i>
-            <cite>History</cite>
-        </a>
-        <a href="">
-            <i class='fas fa-trash-alt' style='font-size:25px;color:lightblue'></i>
-            <cite>Deleted</cite>
-        </a>
-        <a href="https://github.com/Toughee/Don">
-            <i class="fas fa-home" style="font-size:25px;color:lightblue"></i>
-            <cite>Github</cite>
-        </a>
-    </menu>
+    <div class="panelsqr">
+        <div id="result"></div>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+        <br>
+        <hr>
+    </div>
 </body>
-<script src="js/cmds.js"></script>
-<script src="js/createDon.js"></script>
+<script>
+function new_Don() {
+    //generate button
+
+    // X ☒❎✗✘
+    // var deletetab = document.createElement("button")
+    // ✅✔
+    // var dontab = document.createElement("button")
+    // ⚙️⚙️ ⚙ ⚙ ⚙
+    // var edittab = document.createElement("button")
+    // var categoryd = document.getElementById('category_choice').value;
+
+    var taskd = document.getElementById('task_name').value;
+    var dated = document.getElementById('due_name').value;
+
+    var html = "[ ]" + '<b>[' + taskd + ']</b> ' + ", Due date: [" + dated + "]";
+
+    document.getElementById('result').innerHTML = html;
+
+    if (taskd == "") {
+        alert("Please input your task");
+    }
+    return false;
+    if (dated == "") {
+        alert("Please choose a date")
+    }
+    return false;
+}
+
+document.getElementById('create_Don').addEventListener('click', new_Don);
+// add session cookies. Saves created Dons
+</script>
 
 </html>
