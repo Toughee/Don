@@ -39,16 +39,14 @@
             <img class="logostyled" src="img/Don-logo.png"></i> Don</h1>
         <cite>Scheduling | Reminder | Checklist app</cite>
     </header>
-
     <section class="cmds">
         <fieldset>
             <input id="task_name" placeholder="Task:">
             <br>
-
+            <br>
             <input type="date" id="due_name" placeholder="Task:">
             <br>
             <br>
-
             <button id="create_Don">Get it Don!</button>
         </fieldset>
     </section>
@@ -83,37 +81,6 @@
         <hr>
     </div>
 </body>
-<script>
-function new_Don() {
-    //generate button
-
-    // X ☒❎✗✘
-    // var deletetab = document.createElement("button")
-    // ✅✔
-    // var dontab = document.createElement("button")
-    // ⚙️⚙️ ⚙ ⚙ ⚙
-    // var edittab = document.createElement("button")
-    // var categoryd = document.getElementById('category_choice').value;
-
-    var taskd = document.getElementById('task_name').value;
-    var dated = document.getElementById('due_name').value;
-
-    var html = "[ ]" + '<b>[' + taskd + ']</b> ' + ", Due date: [" + dated + "]";
-
-    document.getElementById('result').innerHTML = html;
-
-    if (taskd == "") {
-        alert("Please input your task");
-    }
-    return false;
-    if (dated == "") {
-        alert("Please choose a date")
-    }
-    return false;
-}
-
-document.getElementById('create_Don').addEventListener('click', new_Don);
-// add session cookies. Saves created Dons
-</script>
+<script src="js/createDon.js"></script>
 
 </html>
