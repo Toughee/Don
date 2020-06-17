@@ -14,6 +14,6 @@ Simple organizing app. Let's you create a simple note for a scheduled task, remi
 - [ ] Cleaner code for front page
 - [ ] Create a cookie for each user to save each task for later use or review
 
-## Created with:
+## Created using:
 
 - Javascript
