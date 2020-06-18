@@ -1,6 +1,6 @@
 {
-  "name": "don",
-  "version": "1.2.0",
+  "name": "Don",
+  "version": "2.0.0",
   "description": "Scheduling and reminder app",
   "main": "index.js",
   "directories": {

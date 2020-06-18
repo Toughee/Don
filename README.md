@@ -6,13 +6,18 @@ Simple organizing app. Let's you create a simple note for a scheduled task, remi
 
 ![Don app screenshot](img/screenshot_app.JPG)
 
+## Currently completed tasks
+
+- [x] Cleaner code for front page
+- [x] Create multiple tasks with each button press
+- [ ] Separate pages for deleted and completed task
+
 ## Future updates for app
 
-- [ ] Create multiple tasks with each button press
-- [ ] Edit, delete and complete button for each task created 
-- [ ] Separate pages for deleted and completed task
-- [ ] Cleaner code for front page
+- [ ] Edit and complete button for each task created 
+- [ ] Pages for deleted and completed task working and functional
 - [ ] Create a cookie for each user to save each task for later use or review
+- [ ] Make background lines stay in place
 
 ## Created using:
 
