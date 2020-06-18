@@ -1,14 +1,11 @@
 function new_Don() {
 
-    var taskd = document.getElementById('task_name').value;
-    var dated = document.getElementById('due_name').value;
-    var listedDon = '<b>' + taskd + '</b>' + ", Due date: " + dated;
+    var taskdata = document.getElementById('task_name').value;
+    var datedata = document.getElementById('due_name').value;
 
-    document.getElementById('result').innerHTML = listedDon;
-
-    if (taskd == "") {
-        alert("Please input your task");
-    }
-    return false;
+    var createDon = document.createElement('p');
+    
+    var listedDon = document.createTextNode(' Task: ' + taskdata + ', Due date:' + datedata + hrline);
+    createDon.appendChild(listedDon);
+    document.getElementById("donSection").appendChild(createDon);
 }
-document.getElementById('create_Don').addEventListener('click', new_Don);
