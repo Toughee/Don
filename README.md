@@ -10,7 +10,7 @@ Simple organizing app. Let's you create a simple note for a scheduled task, remi
 
 - [x] Cleaner code for front page
 - [x] Create multiple tasks with each button press
-- [ ] Separate pages for deleted and completed task
+- [x] Separate pages for deleted and completed task
 
 ## Future updates for app
 
