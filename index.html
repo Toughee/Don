@@ -8,7 +8,7 @@
     <!--Meta tags-->
     <meta name="theme-color" content="#B18904">
     <meta name="description" content="Don - Scheduling | Reminder | Checklist app">
-    <meta name="keywords" content="Scheduling, time management, calender, meeting">
+    <meta name="keywords" content="Scheduling, time management, to do list, meeting, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon section-->
     <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -25,67 +25,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Patrick+Hand&family=Ubuntu+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Raleway:wght@300&display=swap&family=Oswald&family=Patrick+Hand&family=Ubuntu+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
     <header>
-        <h1>
-            <img class="logostyled" src="img/Don-logo.png"></i> Don</h1>
-        <cite>Scheduling | Reminder | Checklist app</cite>
+        <aside class="titular">
+            <h1 class="titlelogo">
+                <img class="logostyled" src="img/Don-logo.png"></i> Don <span class="subtil">To do | Checklist app</span></h1>
+        </aside>
     </header>
     <section class="cmds">
         <fieldset>
-            <label>Task type</label>
             <input id="task_name" placeholder="Task:">
             <br>
-            <label>Due date</label>
-            <input type="date" id="due_name">
             <br>
             <button onclick="new_Don()">Get it Don!</button>
         </fieldset>
     </section>
-    <div class="paperbackground">
-        <section>
-            <h1>Your current Dons:</h1>
-        </section>
+    <main class="paperbackground">
+        <h1 class="title">Your current Dons:</h1>
         <hr>
         <div id="donSection"></div>
-        <div class="rulers">
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-            <br>
-            <hr>
-        </div>
-    </div>
+    </main>
 </body>
 <script src="js/createDon.js"></script>
 
